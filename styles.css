@@ -1,0 +1,134 @@
+body {
+    background-color: #383838;
+}
+
+.centered {
+    position: fixed;
+    display: block;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#panel {
+    position: absolute;
+    margin-top: 480px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    margin-left: -10px;
+}
+
+.grid {
+    display: table;
+    border-spacing: 2px;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background: grey;
+    display: table-cell;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    color: #ffffff;
+}
+
+.cell:focus {
+    background-color: red;
+}
+
+.row div:last-child {
+    background: grey;
+}
+
+.panel {
+    border-spacing: 5px;
+    margin-top: 50px;
+}
+
+#first {
+    border-radius: 10px;
+    display: inline-block;
+    border: 5px;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 2px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    background-color: #269a83;
+    font-size: 30px;
+    color: #ffffff;
+}
+#first2 {
+    border-radius: 10px;
+    display: inline-block;
+    border: 5px;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    background-color: #269a83;
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 5px;
+}
+#second {
+    border-radius: 10px;
+    display: inline-block;
+    border: 5px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-top: 37px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+    background-color: #1bd9b3;
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 7px;
+}
+#keep {
+    border-radius: 10px;
+    display: inline-block;
+    border: 5px;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin-top: 33px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    background: grey;
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 7px;
+}
+
+.hold {
+    border: solid #ccc 4px;
+}
+
+.hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+}
+
+.invisible {
+    display: none;
+}
