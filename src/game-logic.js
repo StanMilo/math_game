@@ -38,7 +38,6 @@ class GameLogic {
         if (Number.isInteger(res)) {
             this.setScore(this.row[this.nextPointer]);
             this.row[this.pointer] = res;
-            console.log(currentScore, 'firstBigger score');
             this.row[this.nextPointer] = 0;
         } else {
             this.skip();
@@ -47,7 +46,6 @@ class GameLogic {
 
     nextBigger() {
         var res = this.row[this.nextPointer] / this.row[this.pointer];
-        console.log(score, 'nextBigger score');
         if (Number.isInteger(res)) {
             this.setScore(this.row[this.pointer]);
             this.row[this.pointer] = 0;

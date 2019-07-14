@@ -21,7 +21,9 @@ new DragLogic()
             if (selectedElement.id === 'keep') {
                 selectedElement.innerHTML = '';
             }
-        } catch (error) {}
+        } catch (error) {
+            console.log(error);
+        }
     })
     .onDropKeep(function(element) {
         try {
