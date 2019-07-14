@@ -55,6 +55,10 @@ body {
     margin-top: 50px;
 }
 
+.hasNumb {
+    background-color: #1bd9b3 !important;
+}
+
 #first {
     border-radius: 10px;
     display: inline-block;

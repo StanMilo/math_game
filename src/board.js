@@ -9,7 +9,10 @@ class Board {
         for (let key in this.fields) {
             HTML += `<div class="row">`;
             for (var cell in this.fields[key]) {
-                HTML += `<div class="cell" data-row="${key}" data-field="${cell}">${this.fields[key][cell]}</div>`;
+                let cellColor = this.fields[key][cell] == 0 ? '' : 'hasNumb';
+                HTML += `<div class="cell ${cellColor}" id="cell" data-row="${key}" data-field="${cell}">${this.fields[
+                    key
+                ][cell]}</div>`;
             }
             HTML += `</div>`;
         }
@@ -22,6 +25,8 @@ class Board {
             throw Error('It is not empty');
         }
         this.fields[row][field] = Number.parseInt(value);
+        let gameLogic = new GameLogic(this.fields[row]);
+        this.fields[row] = new GameLogic(this.fields[row]).run().getFields();
         this.fields[row] = new GameLogic(this.fields[row]).run().getFields();
         console.log(this.fields[row]);
         this.render();
