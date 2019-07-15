@@ -6,9 +6,9 @@ class Panel {
     }
     render() {
         // TOODO - popunjava sa random
-        document.getElementById('first').innerHTML = this.generateRandomInteger(2, 12);
-        document.getElementById('first2').innerHTML = this.generateRandomInteger(2, 12);
-        document.getElementById('second').innerHTML = this.generateRandomInteger(2, 12);
+        document.getElementById('first').innerHTML = this.generateRandomInteger(2, 49);
+        document.getElementById('first2').innerHTML = this.generateRandomInteger(2, 49);
+        document.getElementById('second').innerHTML = this.generateRandomInteger(2, 49);
     }
 
     moveToKeep() {
